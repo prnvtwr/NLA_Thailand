@@ -8,12 +8,12 @@ setwd("/Users/pranav/Documents/JT_Paper/Code")
 wd <- "/Users/pranav/Documents/JT_Paper/Code"
 
 #Load big dataset (RDS)
-load("/Users/pranav/Documents/JT_Paper/Code/df_clean_impute.Rdata")
+
 store_impute <- do.call(rbind,store_impute)
 
 #Convert normalized case counts to original case counts
 
-pop_data<-read.csv(paste0(wd,'/popclean.csv'),header = TRUE)
+
 colnames(pop_data) <- sub('X', "", colnames(pop_data)) # Remove X from column names
 
 #Population Values
